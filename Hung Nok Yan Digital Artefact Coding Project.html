@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h1>Hung Nok Yan - Digital Artefact - Coding project</h1>
+<p>My website. Here the link of Eduhk Early Childhood Education and families Studies</p>
+<a href="https://www.apply.eduhk.hk/ug/programmes/ecfs">Click here to go to EdHku website</a>
+
+
+<p>Educationnal Quizz :)</p>
+<br>
+<p>Question 1: What is an Apple: A meat or a Fruit ?</p>
+<button onclick="changethetextfunctionQuestion1()">Click to see the answer of the question 1</button>
+<br>
+<p>Answer: An apple is a <b id="text1" hidden>Fruit</b></p>
+<br>
+<p>Question 2: When I have to pay the Tram: Before to enter or when I leave ?</p>
+<button onclick="changethetextfunctionQuestion2()">Click to see the answer of the question 2</button>
+<br>
+<p>Answer: I pay when I <b id="text2" hidden>leave</b></p>
+<br>
+
+<button onclick="hideallanswers()">Click to hide the answers</button>
+
+<script>
+
+function changethetextfunctionQuestion1() {
+  var number=0;
+  var text1 = document.getElementById("text1");
+  
+  if (number==0) {
+   number=1;
+
+   text1.style.display = "block";
+   
+  } else {
+   number=0;
+   
+   text1.style.display = "none";
+  }
+}
+
+function changethetextfunctionQuestion2() {
+  var number=0;
+  var text2 = document.getElementById("text2");
+  
+  if (number==0) {
+   number=1;
+
+   text2.style.display = "block";
+   
+  } else {
+   number=0;
+   
+   text2.style.display = "none";
+  }
+}
+
+function hideallanswers() {
+  var text1 = document.getElementById("text1");
+  var text2 = document.getElementById("text2");
+
+   text1.style.display = "none";
+   text2.style.display = "none";
+
+
+}
+</script>
+
+</body>
+</html>
